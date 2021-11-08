@@ -36,8 +36,8 @@
     </form>
 
 </div>
-<div class="container mb-5 d-none d-sm-block" >
-    <div class="row">
+<div class="mb-5 d-none d-sm-block" style="background-color: #F5F5F5;">
+    <div class="row" style="padding:0px 15rem 0px 15rem;">
         <div class="col-lg-6 col-xs-12" style="background-color: #F5F5F5; padding:0px !important; margin:0px !important">
         <img src="{{asset('images/home-image.jpg')}}" class="img-fluid img-banner" style="width: 100%; padding:0px !important; margin:0px !important"">
         </div>
