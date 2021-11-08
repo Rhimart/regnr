@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('home', [HomeController::class, 'showHome']);
 Route::post('/details', [HomeController::class, 'showDetails'])->name('showDetails');
+
+Route::post('/sendEmail', [HomeController::class, 'sendEmail'])->name('sendEmail');

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row pt-5 pb-5 px-5 px-5" style="background-color:#E5E7E8 !important;">
+<div class="row pt-5 pb-5 px-lg-5" style="background-color:#E5E7E8 !important;">
     <div class="col-lg-6 col-xs-12 px-5">
         <div class="box container" >
             <div class="input-group input-group-lg" style="box-shadow: 5px 5px rgba(0,0,0,0.2);">
@@ -35,7 +35,7 @@
                     <table class="table border-warning pb-5 mb-5">
                         <tbody>
                             <tr class="py-4" >
-                            <th scope="row">Registret forste gang</th>
+                            <th scope="row">Registret første gang</th>
                             <td>{{$details->TEKN_REG_F_G}}</td>
                             </tr>
                             <tr>
@@ -47,18 +47,18 @@
                 </div>
             </div>
 
-            <div class="card mt-5" style="border-radius:5%; box-shadow: 5px 5px rgba(0,0,0,0.2);">
+            <div class="card card-hvem mt-5" style="border-radius:5%; box-shadow: 5px 5px rgba(0,0,0,0.2);">
                 <div class="card-body">
                     <h3 class="card-title">Hvem eier bilen?</h3>
                     <p class="card-text">Send SMS "REGNER {{$regnr}}" til 2292 </p>
                     <p>Tjenesten koster kr. 49 og dette belastes ditt
-                        mobilabonnement i oyeblikket svaret mottas.
+                        mobilabonnement i øyeblikket svaret mottas.
                         Tjenesten er gratis dersom ventetiden overstiger to
                         minutter.
                     </p>
                     <p>Du vil innen to minutter motta informasjon om hvem som eier
                         leaser bilen, i tilegg til andre navm som har en relasjon til
-                    kjoretoyet, sammen med kontaktinformasjon dette er tilgjengelig</p>
+                    kjøretøyet, sammen med kontaktinformasjon dette er tilgjengelig</p>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
 
             <div class="card mt-5" style="border-radius:5%; padding-bottom:100px; box-shadow: 5px 5px rgba(0,0,0,0.2);">
                 <div class="card-body">
-                    <h2>Kjoretoydata</h2>
+                    <h2>Kjøretøydata</h2>
                     <hr class="text-warning">
                     <table class="table border-warning pb-5 mb-5">
                         <tbody>

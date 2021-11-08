@@ -19,3 +19,8 @@ height: 300px !important;
     justify-content: space-between;
     flex-direction: column;
 }
+@media screen and (max-width: 860px) {
+  .card-hvem{
+    margin-bottom: 30px;
+  }
+}
