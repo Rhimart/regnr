@@ -15,7 +15,7 @@
                 </div>
             </div>
             </span>
-                    <input type="text" style="font-size:36px; text-align: center;" class="form-control" placeholder="License" aria-label="License" aria-describedby="basic-addon1" value="{{$regnr}}">
+                    <input type="text" style="font-size:36px; text-align: center;" class="form-control" aria-label="License" aria-describedby="basic-addon1" value="{{$regnr}}">
                     <span class="input-group-text " id="basic-addon1" >
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12">

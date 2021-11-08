@@ -22,7 +22,7 @@
             </div>
         </span>
 
-            <input type="text" class="form-control" name="license" id="license" placeholder="License" :value="old('license')" required aria-describedby="license-addon">
+            <input type="text" class="form-control" name="license" id="license" :value="old('license')" required aria-describedby="license-addon">
                 <button style="border:none; padding:0px"><span class="input-group-text " id="basic-addon1" >
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-12">
