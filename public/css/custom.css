@@ -22,6 +22,7 @@ height: 300px !important;
 
 .custom-input-home{
   border: 1px solid #000000;
+  text-align: center; 
   font-size: 25px; 
   padding-left:40px;
 }
@@ -87,6 +88,7 @@ height: 300px !important;
   .custom-input-home{
     font-size: 15px;
     padding-left:30px;
+    text-align: center; 
   }
   .custom-input-detial{
     font-size: 15px !important;
