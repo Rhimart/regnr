@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row pt-5 pb-5 px-lg-5" style="background-color:#E5E7E8 !important; max-width: 1800px">
+<div class="row pt-5 pb-5 px-lg-5" style="background-color:#E5E7E8 !important;">
     <div class="col-lg-6 col-xs-12 left-column">
         <div class="box container" >
             <div class="input-group input-group-lg" style="box-shadow:5px 5px 5px rgba(0,0,0,0.1); border-radius:20px">
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </span>
-                    <input type="text" style="font-size:36px; text-align: center; color:#A6ABAE; border:1px solid #000000;" class="form-control" aria-label="License" aria-describedby="basic-addon1" value="{{$regnr}}">
+                    <input type="text"  class="form-control custom-input-detail" readonly aria-label="License" aria-describedby="basic-addon1" value="{{$regnr}}">
                     <button style="border:1px solid #000000; border-radius:20px;  padding:0px 10px 0px 10px; margin-left:-17px; z-index:100; background-color:#ffffff">
                     <span class="input-group-text " id="basic-addon1" style="background-color:#ffffff; border: none">
                     <div class="row d-flex justify-content-center">

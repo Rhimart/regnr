@@ -19,13 +19,18 @@ height: 300px !important;
     justify-content: space-between;
     flex-direction: column;
 }
-@media screen and (max-width: 860px) {
-  .card-hvem{
-    margin-bottom: 30px;
-  }
-}
+
 .custom-input-home{
   border: 1px solid #000000;
+  font-size: 25px; 
+  padding-left:40px;
+}
+.custom-input-detail{
+  font-size:36px !important; 
+  text-align: center; 
+  color:#A6ABAE; 
+  border:1px solid #000000;
+  background-color: #ffffff !important;
 }
 .custom-input-home:hover,
 .custom-input-home:focus,
@@ -69,5 +74,29 @@ height: 300px !important;
   .right-column{
     padding-right:0px;
     padding-left:0px;
+  }
+}
+.nav-header{
+  font-size:35px;
+}
+
+@media screen and (max-width: 860px) {
+  .card-hvem{
+    margin-bottom: 30px;
+  }
+  .custom-input-home{
+    font-size: 15px;
+    padding-left:30px;
+  }
+  .custom-input-detial{
+    font-size: 15px !important;
+    text-align: center; 
+  }
+  .nav-header{
+    font-size:24px;
+    margin: 30px 0px 30px 0px;
+  }
+  .header-image{
+    height:100px !important;
   }
 }

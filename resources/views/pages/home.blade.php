@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div style="max-width:1800px" align="justify">
-<img src="{{asset('images/header-image.png')}}" class="img-fluid" alt="Header ">
+<img src="{{asset('images/header-image.png')}}" class="img-fluid header-image" alt="Header ">
 <div class="container">
 <h5 class="pt-5" align="center">Finn kjøretøyopplysninger og se hvem som eier bilen</h5>
 
@@ -22,7 +21,7 @@
                 </div>
             </div>
         </span>
-            <input type="text" class="form-control custom-input-home" name="license" id="license" style="font-size: 25px; padding-left:40px" Placeholder="Skriv inn regnr" :value="old('license')" required aria-describedby="license-addon">
+            <input type="text" class="form-control custom-input-home" name="license" id="license"  Placeholder="Skriv inn regnr" :value="old('license')" required aria-describedby="license-addon">
             <button style="border:1px solid #000000; border-radius:20px;  padding:0px 10px 0px 10px; margin-left:-17px; z-index:100; background-color:#ffffff">
                     <span class="input-group-text " id="basic-addon1" style="background-color:#ffffff; border: none">
                     <div class="row d-flex justify-content-center">
@@ -56,7 +55,6 @@
 </div>
 
 
-</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 @endsection

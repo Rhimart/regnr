@@ -30,7 +30,9 @@
     </head>
     <body class="antialiased" >
         @include('components.navigation')
+        <div style="margin:auto; max-width:1800px" align="justify">
         @yield('content')
+        </div>
         <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
