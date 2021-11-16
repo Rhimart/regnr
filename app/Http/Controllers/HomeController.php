@@ -22,7 +22,7 @@ class HomeController extends Controller
         ]);
 
         $response = Http::get('https://noditel.eu/api/vehicle-details?t=Dsf4H234BsdfsGERW6300t4HdgdfgbEFDr560GgerDFgre4rr9dF359cr23&regnr=' . $request->license);
-
+        
         if ($response != "") {
             $response = json_decode($response);
 
@@ -33,13 +33,13 @@ class HomeController extends Controller
                     if ($convertedDrivstoffs === "") {
                         $convertedDrivstoffs = Response::TEKN_DRIVST[$drivstoff];
                     } else {
-                        $convertedDrivstoffs += ","+Response::TEKN_DRIVST[$drivstoff];
+                        $convertedDrivstoffs .= ",".Response::TEKN_DRIVST[$drivstoff];
                     }
                 }
             }
             $response->TEKN_DRIVST = $convertedDrivstoffs;
-            $response->TEKN_REG_F_G = date("j, M, Y", strtotime($response->TEKN_REG_F_G));
-            $response->TEKN_REG_F_G_N = date("j, M, Y", strtotime($response->TEKN_REG_F_G_N));
+            $response->TEKN_REG_F_G = date("j", strtotime($response->TEKN_REG_F_G)).", ".date("M", strtotime($response->TEKN_REG_F_G)).", <span style='font-weight:800;'>".date("Y", strtotime($response->TEKN_REG_F_G))."</span>";
+            $response->TEKN_REG_F_G_N = date("j", strtotime($response->TEKN_REG_F_G_N)).", ".date("M", strtotime($response->TEKN_REG_F_G_N)).", <span style='font-weight:800;'>".date("Y", strtotime($response->TEKN_REG_F_G_N))."</span>";
             return view('pages.detail')->with('details', $response)->with('regnr', $request->license);
         } else {
             return back()->withErrors(['license' => 'No Record']);

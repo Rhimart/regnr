@@ -19,15 +19,45 @@
         </style>
 
         <style>
+            @font-face {
+                font-family: custom-font;
+                src: url("{{asset('fonts/Accumin-pro-Regular.otf')}}");
+                }
             body {
-                font-family: 'Nunito', sans-serif;
+                font-family: custom-font;
             }
         </style>
     </head>
-    <body class="antialiased">
+    <body class="antialiased" >
         @include('components.navigation')
         @yield('content')
-
+        <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <form method="POST" action="{{ route('sendEmail') }}">
+      {{ csrf_field() }}
+      <div class="modal-body">
+      <h5 class="modal-title" align="center" id="contact_us_modalLabel">Kontakt oss</h5>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-post</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Din henvendelse</label>
+            <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer" style="justify-content: space-around !important">
+        <button type="submit" align="center" class="btn text-light" style="background-color:#454F55; padding: 0.5rem 1.5rem !important; border-radius:0% !important;">Send Melding</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
     </body>
     <footer class="p-5" style="background-color: #454F55 !important;">
         <div class="row">
@@ -41,13 +71,20 @@
                 <ul class="text-light" style="list-style-type:none;">
                     <li>Linker</li>
                     <li>Forsiden</li>
-                    <li>Kundeservice</li>
+                    <li><a class="text-light" href="#" id="Kundeservice"> Kundeservice</a></li>
                     <li>Vegvesenet</li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+    $( document ).ready(function() {
+        $('#Kundeservice').click(function(){
+            $('#contact_us_modal').modal('show');
+        });
+    });
+    </script>
 </html>
 
 
