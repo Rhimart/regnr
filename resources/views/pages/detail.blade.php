@@ -4,7 +4,8 @@
 <div class="row pt-5 pb-5 px-lg-5" style="background-color:#E5E7E8 !important;">
     <div class="col-lg-6 col-xs-12 left-column">
         <div class="box container" >
-            <div class="input-group input-group-lg" style="box-shadow:5px 5px 5px rgba(0,0,0,0.1); border-radius:20px">
+            <div class="d-none d-sm-block">
+            <div class="input-group input-group-lg " style="box-shadow:5px 5px 5px rgba(0,0,0,0.1); border-radius:20px">
                 <span class="input-group-text " id="basic-addon1" style="background-color: #122E96 !important; border:1px solid #000000; border-radius:20px; margin-right:-17px; z-index:100;">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-12" style="padding: 0px !important; margin:0px !important;">
@@ -27,7 +28,8 @@
                     </div>
                     </span>
             </button>
-        </div>
+            </div>
+            </div>
 
             <div class="card mt-5" style="border-radius:30px; box-shadow:5px 5px 5px rgba(0,0,0,0.1);">
                 <div class="card-body">

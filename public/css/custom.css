@@ -6,6 +6,19 @@ height: 300px !important;
 .custom-input{
     max-width:35%;
  }
+
+ .custom-input-nav h6{
+  font-size:13px !important;
+  margin:0px !important;
+ }
+ .custom-input-nav img{
+  width:20px !important;
+ }
+ .custom-input-nav h3{
+  font-size:17px !important;
+  line-height: 1;
+ }
+
  .home-img-desc{
   padding:0px 15rem 0px 15rem;
  }
