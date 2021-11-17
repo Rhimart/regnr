@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row pt-5 pb-5 px-lg-5" style="background-color:#E5E7E8 !important;">
+<div class="row pt-lg-5 pt-md-5 pb-5 px-lg-5" style="background-color:#E5E7E8 !important;">
     <div class="col-lg-6 col-xs-12 left-column">
         <div class="box container" >
             <div class="d-none d-sm-block">
