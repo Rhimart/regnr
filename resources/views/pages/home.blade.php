@@ -39,11 +39,11 @@
 
 </div>
 <div class="mb-5 d-none d-sm-block" style="background-color: #F5F5F5;">
-    <div class="row" style="padding:0px 15rem 0px 15rem;">
-        <div class="col-lg-6 col-xs-12" style="background-color: #F5F5F5; padding:0px !important; margin:0px !important">
+    <div class="row home-img-desc" >
+        <div class="col-lg-6 col-xs-12 col-md-6 col-sm-6" style="background-color: #F5F5F5; padding:0px !important; margin:0px !important">
         <img src="{{asset('images/home-image.jpg')}}" class="img-fluid img-banner" style="width: 100%; padding:0px !important; margin:0px !important">
         </div>
-        <div class="col-lg-6 col-xs-12 " align="center" style="background-color: #F5F5F5; padding:0px !important; margin:auto !important">
+        <div class="col-lg-6 col-xs-12 col-md-6 col-sm-6" align="center" style="background-color: #F5F5F5; padding:0px !important; margin:auto !important">
             <h6>Finn kjøretøyopplysninger</h6>
             <button class="btn btn-secondary" style="background-color:rgb(69,79,85)">Søk etter bi</button>
         </div>
